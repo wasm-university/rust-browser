@@ -17,7 +17,7 @@ wasm-bindgen = "0.2.50"
 ```
 
 > change the code source of `main.rs`
-```bash
+```rust
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
