@@ -1,13 +1,23 @@
-
+image:
+  file: .gitpod.dockerfile
+  
 tasks:
   - name: initialize
     before: |
-      curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
-      source /workspace/.cargo/env
+      echo "🎉"
+      #curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+      #source /workspace/.cargo/env
+      #curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh 
 
     init: |
       echo "🚀"
       
+ports:
+  - port: 8080
+    visibility: public
+
 vscode:
   extensions:
+    - pkief.material-icon-theme
     - rust-lang.rust
+    - bungcip.better-toml
