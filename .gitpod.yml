@@ -11,6 +11,7 @@ tasks:
 
     init: |
       echo "🚀"
+      npm install
       
 ports:
   - port: 8080
@@ -21,3 +22,4 @@ vscode:
     - pkief.material-icon-theme
     - rust-lang.rust
     - bungcip.better-toml
+    
