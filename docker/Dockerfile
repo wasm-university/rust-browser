@@ -5,7 +5,10 @@ RUN sudo apt-get update && \
 
 USER gitpod
 
-RUN brew install httpie
+RUN brew install exa && \
+    brew install bat && \
+    brew install httpie && \
+    brew install hey
 
 # ------------------------------------
 # Install Rust support
