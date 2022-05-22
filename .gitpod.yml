@@ -1,13 +1,13 @@
-image:
-  file: .gitpod.dockerfile
+#image:
+#  file: .gitpod.dockerfile
+
+image: k33g/wasm-university-rust:0.0.0
+
   
 tasks:
   - name: initialize
     before: |
       echo "🎉"
-      #curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
-      #source /workspace/.cargo/env
-      #curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh 
 
     init: |
       echo "🚀"
